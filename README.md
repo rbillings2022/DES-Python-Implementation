@@ -6,6 +6,7 @@ This is a toy simulation of DES. It has it's own encoding scheme that covers 256
 Since this a toy implementation, the 8 bits removed during permuted choice 1 are not stored or used anywhere, they're just discarded. 
 ## DES encryption Architecture
 <img width="2301" height="3099" alt="Cryptography Cipher architecture" src="https://github.com/user-attachments/assets/844dcd34-f4c3-4b6a-b627-6007be4b704b" />
+
 ## DES Mode of operation Architecture
 <img width="1920" height="1080" alt="Mode of Operations" src="https://github.com/user-attachments/assets/dd1f1d74-18b2-4e9a-8124-ffdfc84061f8" />
 
