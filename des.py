@@ -595,8 +595,8 @@ def mode_of_operation(message:str, secret_key:str):
 
     list_of_DES_blocks = []
 
-    warning = "**THE SOFTWARE ONLY SUPPORTS A NUMBER OF CHARACTERS THATS A MULTIPLE OF 8**\n " \
-                "**So the system will pad every message with '!'**"
+    warning = "\n**THE SOFTWARE ONLY SUPPORTS A NUMBER OF CHARACTERS THATS A MULTIPLE OF 8**\n " \
+                "**So the system will pad every message with '!' if needed**"
     new_message = f"Message after padding applied: {message}"
     encoded_plaintext = ascii_encoding(message)
     encoded_secret_key = ascii_encoding(secret_key)
@@ -635,20 +635,20 @@ def mode_of_operation(message:str, secret_key:str):
 
 
 def main():
-    secret_key = input("Please enter a secret key (must be characters 8 long): ")
+    secret_key = input("Please enter a secret key (must be 8 characters long): ")
     if len(secret_key)!=8:
         print("Sorry the secret key size can only be 8 characters in length, try again.")
     else:
-        message = input("Please enter a message you wish to encrypt")
+        message = input("Please enter a message you wish to encrypt: ")
 
         ciphertext, decrypted_ciphertext, new_message, warning = mode_of_operation(message, secret_key)
 
-        print(warning)
+        print("\n",warning)
         print("/////////////////////////////////////////////////////////////////////////////////////////")
         print(new_message,"\n")
         print(f"Your message after encryption: {ciphertext}")
         print("/////////////////////////////////////////////////////////////////////////////////////////")
-        print(f"Your message after decryption {decrypted_ciphertext}")
+        print(f"Your message after decryption {decrypted_ciphertext}\n")
 
 if __name__ == "__main__":
     main()
