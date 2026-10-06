@@ -39,6 +39,11 @@ This is an Educational implementation of DES using ECB mode and a custom encodin
 - Finally Inverse permutation is applied.
 ## Tests
 - TO BE DECIDED
+
+## Security Analysis
+- TO BE DECIDED
+
+
 ## DES encryption Architecture
 <img width="2301" height="3099" alt="Cryptography Cipher architecture" src="https://github.com/user-attachments/assets/844dcd34-f4c3-4b6a-b627-6007be4b704b" />
 
