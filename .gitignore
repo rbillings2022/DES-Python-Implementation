@@ -1,2 +1,4 @@
 README.txt
 des_venv/
+__pycache__/
+build.ipynb
